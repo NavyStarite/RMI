@@ -7,7 +7,7 @@ package rmisd;
 
 /**
  *
- * @author Escuela
+ * @author Navy
  */
 public class RMISD {
 
