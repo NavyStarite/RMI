@@ -5,16 +5,29 @@
  */
 package rmisd;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Navy
  */
 public class GamePanel extends javax.swing.JPanel {
-
+    methodsGame logic = new methodsGame();
+    ArrayList Correct = new ArrayList();
+    ArrayList PlayerInput = new ArrayList();
     /**
      * Creates new form GamePanel
      */
+    public void rng(){
+    for (int i = 0; i < 10; i++) {
+            logic.RNGCorrectArray(logic.RNG(), Correct);
+        }
+        for (int i = 0; i < Correct.size(); i++) {
+            System.out.println("Correct numbers:"+Correct.get(i));
+        }
+    }
     public GamePanel() {
+        rng();
         initComponents();
     }
 
@@ -55,83 +68,369 @@ public class GamePanel extends javax.swing.JPanel {
 
         setMinimumSize(new java.awt.Dimension(395, 395));
         setPreferredSize(new java.awt.Dimension(400, 400));
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
         setLayout(new java.awt.GridLayout(5, 5));
 
-        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         add(jButton1);
 
-        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         add(jButton2);
 
-        jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         add(jButton3);
 
-        jButton4.setText("jButton4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         add(jButton4);
 
-        jButton5.setText("jButton5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         add(jButton5);
 
-        jButton6.setText("jButton6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         add(jButton6);
 
-        jButton7.setText("jButton7");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         add(jButton7);
 
-        jButton8.setText("jButton8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         add(jButton8);
 
-        jButton9.setText("jButton9");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         add(jButton9);
 
-        jButton10.setText("jButton10");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         add(jButton10);
 
-        jButton11.setText("jButton11");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
         add(jButton11);
 
-        jButton12.setText("jButton12");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         add(jButton12);
 
-        jButton13.setText("jButton13");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
         add(jButton13);
 
-        jButton14.setText("jButton14");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         add(jButton14);
 
-        jButton15.setText("jButton15");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         add(jButton15);
 
-        jButton16.setText("jButton16");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
         add(jButton16);
 
-        jButton17.setText("jButton17");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
         add(jButton17);
 
-        jButton18.setText("jButton18");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         add(jButton18);
 
-        jButton19.setText("jButton19");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         add(jButton19);
 
-        jButton20.setText("jButton20");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
         add(jButton20);
 
-        jButton21.setText("jButton21");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
         add(jButton21);
 
-        jButton22.setText("jButton22");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
         add(jButton22);
 
-        jButton23.setText("jButton23");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
         add(jButton23);
 
-        jButton24.setText("jButton24");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
         add(jButton24);
 
-        jButton25.setText("jButton25");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
         add(jButton25);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        System.out.println("1");
+        logic.RNGArrayPlayer(1, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.out.println("2");
+        logic.RNGArrayPlayer(2, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        System.out.println("3");
+        logic.RNGArrayPlayer(3, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        System.out.println("4");
+        logic.RNGArrayPlayer(4, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("5");
+        logic.RNGArrayPlayer(5, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("6");
+        logic.RNGArrayPlayer(6, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("7");
+        logic.RNGArrayPlayer(7, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("8");
+        logic.RNGArrayPlayer(8, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("9");
+        logic.RNGArrayPlayer(9, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("10");
+        logic.RNGArrayPlayer(10, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("11");
+        logic.RNGArrayPlayer(11, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("12");
+        logic.RNGArrayPlayer(12, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("13");
+        logic.RNGArrayPlayer(13, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("14");
+        logic.RNGArrayPlayer(14, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("15");
+        logic.RNGArrayPlayer(15, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("16");
+        logic.RNGArrayPlayer(16, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("17");
+        logic.RNGArrayPlayer(17, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("18");
+        logic.RNGArrayPlayer(18, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("19");
+        logic.RNGArrayPlayer(19, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:System.out.println("
+        System.out.println("20");
+        logic.RNGArrayPlayer(20, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("21");
+        logic.RNGArrayPlayer(21, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("22");
+        logic.RNGArrayPlayer(22, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("23");
+        logic.RNGArrayPlayer(23, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("24");
+        logic.RNGArrayPlayer(24, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("25");
+        logic.RNGArrayPlayer(25, PlayerInput);
+        logic.RNGArrayCheck(PlayerInput, Correct);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        // TODO add your handling code here:
+        if (java.awt.event.KeyEvent.VK_R == evt.getKeyCode()) {
+            PlayerInput = new ArrayList();
+            Correct = new ArrayList();
+            rng();
+        }
+    }//GEN-LAST:event_formKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
