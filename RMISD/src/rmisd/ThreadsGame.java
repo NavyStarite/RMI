@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 public class ThreadsGame {
 
 
-    public void main() {
+    public static void main(String [] Args) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
