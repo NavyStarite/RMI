@@ -16,7 +16,7 @@ public class LoginImplement extends UnicastRemoteObject implements LoginInterfac
     
     public LoginImplement() throws RemoteException{
     }
-    
+    String name = "";
     public boolean getLogin(String user) throws RemoteException { 
         boolean found = false;
         try{
@@ -32,15 +32,17 @@ public class LoginImplement extends UnicastRemoteObject implements LoginInterfac
         }
         return found;
     }
-    public String getName(String user) throws RemoteException {
-        String name = "";
+    public void setName(String user) throws RemoteException {
         try{
-            return name = user;
+            name = user;
         }
         catch(Exception ex){
             ex.printStackTrace();
         }
-        return name;
     }
     
+    public String getName() throws RemoteException {
+        return name;
+    }
+
 }

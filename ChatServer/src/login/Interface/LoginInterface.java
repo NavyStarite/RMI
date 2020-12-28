@@ -12,5 +12,6 @@ package login.Interface;
 import java.rmi.*;
 public interface LoginInterface extends Remote{
     public boolean getLogin (String user) throws RemoteException;
-    public String getName (String user) throws RemoteException;
+    public void setName (String user) throws RemoteException;
+    public String getName () throws RemoteException;
 }

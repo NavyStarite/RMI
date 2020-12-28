@@ -104,7 +104,11 @@ public class ChatUI extends javax.swing.JFrame{
         ip = new JTextField();
         tf = new JTextField();
         name = new JTextField();
-        name.setText(in.obtenernombre(null));//-----------usuario de login aqui es domde se debe mandar el usuatio
+        try {
+            name.setText(i.getName());//-----------usuario de login aqui es domde se debe mandar el usuatio
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         tx = new JTextArea();
         connect = new JButton("Conectarse");
         JButton bt = new JButton("Enviar");
