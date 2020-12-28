@@ -4,21 +4,30 @@ import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.*;
-
+import login.Interface.LoginInterface;
+import rmiinicio.Inicio;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 import java.util.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class ChatUI {
+public class ChatUI extends javax.swing.JFrame{
 
     private ChatClient client;
     private ChatServerInt server;
     Registry reg;
     
+    LoginInterface i;
+    Inicio in;
+    //String user=in.obtenernombre(null);
     public void doConnect() {
         //Validaciones
         if (connect.getText().equals("Conectarse")) {
+            
             if (name.getText().length() < 2) {
                 JOptionPane.showMessageDialog(frame, "Necesitas un nombre valido.");
                 return;
@@ -86,6 +95,7 @@ public class ChatUI {
     }
 
     public ChatUI() {
+        
         frame = new JFrame("Chat Grupal");
         JPanel main = new JPanel();
         JPanel top = new JPanel();
@@ -94,6 +104,7 @@ public class ChatUI {
         ip = new JTextField();
         tf = new JTextField();
         name = new JTextField();
+        name.setText(in.obtenernombre(null));//-----------usuario de login aqui es domde se debe mandar el usuatio
         tx = new JTextArea();
         connect = new JButton("Conectarse");
         JButton bt = new JButton("Enviar");

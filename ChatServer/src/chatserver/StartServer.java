@@ -8,6 +8,8 @@ import java.rmi.server.*;
 public class StartServer {
 
     public static void main(String[] args) {
+        
+        
         try {
             Registry reg=LocateRegistry.createRegistry(8080);
             //System.setSecurityManager(new RMISecurityManager());
