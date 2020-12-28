@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author Navy
  */
 public class GamePanel extends javax.swing.JPanel {
-    methodsGame logic = new methodsGame();
-    ArrayList Correct = new ArrayList();
-    ArrayList PlayerInput = new ArrayList();
+    public methodsGame logic = new methodsGame();
+    public ArrayList Correct = new ArrayList();
+    public ArrayList PlayerInput = new ArrayList();
     /**
      * Creates new form GamePanel
      */
@@ -434,30 +434,30 @@ public class GamePanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    public javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton10;
+    public javax.swing.JButton jButton11;
+    public javax.swing.JButton jButton12;
+    public javax.swing.JButton jButton13;
+    public javax.swing.JButton jButton14;
+    public javax.swing.JButton jButton15;
+    public javax.swing.JButton jButton16;
+    public javax.swing.JButton jButton17;
+    public javax.swing.JButton jButton18;
+    public javax.swing.JButton jButton19;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton20;
+    public javax.swing.JButton jButton21;
+    public javax.swing.JButton jButton22;
+    public javax.swing.JButton jButton23;
+    public javax.swing.JButton jButton24;
+    public javax.swing.JButton jButton25;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton6;
+    public javax.swing.JButton jButton7;
+    public javax.swing.JButton jButton8;
+    public javax.swing.JButton jButton9;
     // End of variables declaration//GEN-END:variables
 }

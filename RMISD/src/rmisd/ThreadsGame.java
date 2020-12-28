@@ -16,31 +16,32 @@ import javax.swing.JFrame;
         frame.setSize(500, 500);
         frame.setVisible(true);
  * @author Escuela
- */
-
-
+*/
 public class ThreadsGame {
 
+/*
 
-    public static void main(String [] Args) {
+
+boolean finishedSequence = false;
+GamePanel game = new GamePanel();
+    public void main(String [] Args) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                
+                game.setBounds(0,0,500, 500);
+                JFrame frame= new JFrame();
+                frame.add(game);
+                frame.pack();
+                frame.setSize(500, 500);
+                frame.setVisible(true);
             }
         });
 
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 10; i++) {
-                    System.out.println("Pato " + i);
-
-                    try {
-                        //Code here
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                for (int i = 0; i < GamePanel.Correct.size(); i++) {
+                    
                 }
             }
         });
@@ -49,5 +50,5 @@ public class ThreadsGame {
         thread2.start();
     }
 
-    
+     */
 }
