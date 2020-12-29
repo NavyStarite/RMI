@@ -112,6 +112,7 @@ public class Inicio extends javax.swing.JFrame {
             LoginInterface i = (LoginInterface)reg.lookup("login");
             
             f = i.getLogin(jTextField2.getText());
+            i.setName(jTextField2.getText());
             
             if (f==true) {
                 JOptionPane.showMessageDialog(null,"Yay ahora immplementalo a tu chat");
@@ -172,8 +173,8 @@ public class Inicio extends javax.swing.JFrame {
         });
     }
     
-    public String obtenernombre(String nombre){
-        nombre=jTextField2.getText();
+    public String obtenernombre( ){
+        String nombre=jTextField2.getText();
         return nombre;
     }
 
